@@ -1,0 +1,8 @@
+{% extends 'bace.html' %}
+
+{% block content %}
+<a href="{% url 'pdelete' user.id %}"> delete </a>
+<h2>{{user.name}}</h2>
+<p>{{user.family}} </p>
+<h3>{{user.number}} </h3>
+{% endblock content %}

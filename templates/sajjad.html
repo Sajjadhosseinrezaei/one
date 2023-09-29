@@ -1,0 +1,13 @@
+{% extends 'bace.html' %}
+
+{% block title %} sajjad {% endblock %}
+
+{% block content %}
+   <div class="card">
+    {% for user in Users %}
+    <a href="{% url 'person_details' user.id %}" class="card-body">{{user.name}}</a>
+    <br/
+    >
+    {% endfor %}
+   </div>
+{% endblock %}
